@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Video Player</title>
+  </head>
+  <body>
+    <h1>QR Code Video Player</h1>
+    <video id="player" controls>
+      <source id="FratShirtDrinkWaterLoser" src="FratShirtDrinkWaterLoser.mp4" type="video/mp4">
+      <source id="FratShirtShakeSomeAss" src="FratShirtShakeSomeAss.mp4" type="video/mp4">
+      <source id="FratShirtShotgun" src="FratShirtShotgun.mp4" type="video/mp4">
+      <source id="FratShirtTakeADrink" src="FratShirtTakeADrink.mp4" type="video/mp4">
+      <source id="FratShirtTakeAPull" src="FratShirtTakeAPull.mp4" type="video/mp4">
+      <source id="FratShirtTakeAShot" src="FratShirtTakeAShot.mp4" type="video/mp4">
+    </video>
+  </body>
+  <script>
+    // 2. Add the following JavaScript code to the HTML file:
+    var player = document.getElementById("player");
+    var videos = document.getElementsByTagName("source");
+    var randomIndex = Math.floor(Math.random() * videos.length);
+    player.src = videos[randomIndex].src;
+    player.load();
+    player.play();
+  </script>
+</html>

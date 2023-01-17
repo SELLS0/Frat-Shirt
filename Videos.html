@@ -1,26 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>QR Code Video Player</title>
-  </head>
-  <body>
-    <h1>QR Code Video Player</h1>
-    <video id="player" controls>
+<head>
+  <title>DRINK RESPONSIBLY</title>
+  <style>
+      .small-gray {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.948);
+      }
+  </style>
+</head>
+<body>
+  <h1>DRINK RESPONSIBLY</h1>
+  <video id="player" controls>
       <source id="FratShirtDrinkWaterLoser" src="FratShirtDrinkWaterLoser.mp4" type="video/mp4">
       <source id="FratShirtShakeSomeAss" src="FratShirtShakeSomeAss.mp4" type="video/mp4">
       <source id="FratShirtShotgun" src="FratShirtShotgun.mp4" type="video/mp4">
       <source id="FratShirtTakeADrink" src="FratShirtTakeADrink.mp4" type="video/mp4">
       <source id="FratShirtTakeAPull" src="FratShirtTakeAPull.mp4" type="video/mp4">
       <source id="FratShirtTakeAShot" src="FratShirtTakeAShot.mp4" type="video/mp4">
-    </video>
-  </body>
+  </video>
+  <p class="small-gray">KNOW YOUR LIMIT: This website is designed as an ADULT Drinking Game. Individuals under age and or pregnant should not partake in ALCOHOLIC drinking activities. Consumption of alcoholic beverages impairs your ability to operate machinery and may cause health problems. We do not recommend or condone undersage drinking, any sort of hazing, excessive consumption, binge-drinking, drinking and driving or boating. It is the players responsibility to moderate and monitor their own alcoholic consumption. We recommend that all players make adequate arrangements for their personal saftey and transportation BEFORE playing.DISCLAIMER: Makers of the Shirt AND Website are not liable for special or consequential damages resulting from the use, misuse, inability to use or interpretation of the contents of this product. By using this product the individual UNDERSTANDS the hazards that may come with over consumption and must take full responsibility for their own actions.</p>
   <script>
-    // 2. Add the following JavaScript code to the HTML file:
-    var player = document.getElementById("player");
-    var videos = document.getElementsByTagName("source");
-    var randomIndex = Math.floor(Math.random() * videos.length);
-    player.src = videos[randomIndex].src;
-    player.load();
-    player.play();
+  // 2. Add the following JavaScript code to the HTML file:
+  var player = document.getElementById("player");
+  var videos = document.getElementsByTagName("source");
+  var randomIndex = Math.floor(Math.random() * videos.length);
+  player.src = videos[randomIndex].src;
+  player.load();
+  player.play();
   </script>
-</html>
+</body>
